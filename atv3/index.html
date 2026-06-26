@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <div class="login">
+        <label for="Login">Login:</label>
+            <input type="text" id="Login" name="Login" placeholder="Digite seu Login" required>
+        </div>
+    <div class="login">
+        <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email" placeholder="Digite seu email" required>
+        </div>
+    <div class="login">
+        <label for="Senha">Senha:</label>
+            <input type="text" id="Senha" name="Senha" placeholder="Digite sua senha" required>
+        </div>
+
+        <div class="button">
+        <Button type="submit">Enviar</Button>
+        </div>
+
+
+
+            <div class="card-formulario">
+        <h2>Nova Tarefa</h2>
+
+        <form action="#" method="POST">
+            
+            <div class="campo">
+                <label for="titulo">Tarefa:</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Ex: Estudar HTML e CSS" required>
+            </div>
+
+            <div class="campo">
+                <label for="prioridade">Prioridade:</label>
+                <select id="prioridade" name="prioridade" required>
+                    <option value="baixa">Baixa</option>
+                    <option value="media" selected>Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="descricao">Descrição:</label>
+                <input type="descricao" name="descricao" rows="4" placeholder="Detalhes da tarefa">
+            </div>
+
+            <div class="container-botao">
+                <button type="submit">Criar Tarefa</button>
+            </div>
+
+        </form>
+    </div>
+
+<div class="card-formulario">
+        <h2>Reserva de Espaço da Escola</h2>
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="nome-reserva">Nome Completo:</label>
+                <input type="text" id="nome-reserva" name="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="turma">Turma:</label>
+                <input type="text" id="turma" name="turma" placeholder="Ex: 3º Ano A - Técnico" required>
+            </div>
+
+            <div class="campo">
+                <label for="espaco">Espaço Desejado:</label>
+                <select id="espaco" name="espaco" required>
+                    <option value="">Selecione o local...</option>
+                    <option value="laboratorio">Laboratório de Informática</option>
+                    <option value="biblioteca">Sala de Estudos da Biblioteca</option>
+                    <option value="quadra">Quadra Poliesportiva</option>
+                    <option value="auditorio">Auditório</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="horario">Horário da Reserva:</label>
+                <input type="time" id="horario" name="horario" required>
+            </div>
+
+            <div class="container-botao">
+                <button type="submit">Solicitar Reserva</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="card-formulario">
+        <h2>Login Escolar</h2>
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="email-login">E-mail:</label>
+                <input type="email" id="email-login" name="email" placeholder="seuemail@escola.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha-login">Senha:</label>
+                <input type="password" id="senha-login" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <div class="container-botao">
+                <button type="submit">Entrar no Sistema</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="card-formulario">
+        <h2>Contato com a Coordenação</h2>
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="nome-contato">Seu Nome:</label>
+                <input type="text" id="nome-contato" name="nome" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="campo">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione o motivo do contato...</option>
+                    <option value="duvida">Dúvida sobre Matérias/Horários</option>
+                    <option value="justificativa">Justificativa de Falta</option>
+                    <option value="sugestao">Sugestão ou Reclamação</option>
+                    <option value="outro">Outros Assuntos</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem / Justificativa:</label>
+                <input type="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required>
+            </div>
+
+            <div class="container-botao">
+                <button type="submit">Enviar Mensagem</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

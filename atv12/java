@@ -1,0 +1,27 @@
+app.get('/usuarios', (req, res) => {
+    const usuarios = ['Ana', 'Carlos', 'Beatriz'];
+    res.json(usuarios);
+});
+
+
+app.get('/tarefas', (req, res) => {
+    const tarefas = ['Estudar Express', 'Fazer os exercícios', 'Praticar JavaScript'];
+    res.json(tarefas);
+});
+
+
+app.get('/reservas', (req, res) => {
+    const reservas = ['Mesa 1 - 19:00', 'Mesa 4 - 20:30'];
+    res.json(reservas);
+});
+
+
+app.get('/status', (req, res) => {
+    res.send('Sistema online e operando normalmente.');
+});
+
+
+app.get('/turmas', (req, res) => {
+    const turmas = ['Turma A - Backend', 'Turma B - Frontend', 'Turma C - Mobile'];
+    res.json(turmas);
+});

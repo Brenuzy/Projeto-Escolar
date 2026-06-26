@@ -1,0 +1,33 @@
+h1{
+    text-align:center;
+}
+
+.login{
+    margin-top: 30%;
+    text-align: center;
+    margin-top: .5%;
+}
+
+.button{
+    text-align: center;
+    margin-top: 2%;
+    background: transparent;
+}
+
+.campo{
+    text-align: center;
+    margin-top: 1%;
+}
+
+.container-botao{
+    text-align: center;
+    margin-top: 2%;
+}
+
+h2{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(107, 192, 248);
+}

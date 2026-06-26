@@ -1,0 +1,40 @@
+app.get('/', (req, res) => {
+    res.send('Bem-vindo à nossa plataforma oficial!');
+});
+
+app.get('/sobre', (req, res) => {
+    res.send('Este projeto foi desenvolvido como um laboratório prático de rotas backend.');
+});
+
+app.get('/equipe', (req, res) => {
+    res.send('Nossa equipe é composta por desenvolvedores full-stack focados em performance.');
+});
+
+app.get('/contato', (req, res) => {
+    res.send('Caso precise de suporte, envie uma mensagem para suporte@meudominio.com.');
+});
+
+
+
+const express = require('express');
+const app = express();
+
+// Rota 1
+app.get('/', (req, res) => {
+    res.send('Página Inicial da Aplicação');
+});
+
+// Rota 2
+app.get('/servicos', (req, res) => {
+    res.send('Conheça os nossos serviços de desenvolvimento.');
+});
+
+// Rota 3
+app.get('/ajuda', (req, res) => {
+    res.send('Precisa de ajuda? Acesse nossa central de atendimento.');
+});
+
+// Inicialização do servidor
+app.listen(3000, () => {
+    console.log('Servidor rodando com 3 rotas ativas na porta 3000');
+});
