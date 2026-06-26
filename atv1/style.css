@@ -1,0 +1,38 @@
+
+h1{
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.t1{
+    font-size: 75px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.t2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.botão{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.botão2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.botão3{
+    margin-top: 10px;
+    text-align: center;
+}
