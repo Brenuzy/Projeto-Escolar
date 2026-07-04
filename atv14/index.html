@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Mock - Rotas POST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>API Mock - Sistema Escolar</h1>
+            <p>Simulação de rotas POST</p>
+        </header>
+
+        <main class="forms-grid">
+            
+            <div class="card-form">
+                <h2>1. POST /avisos</h2>
+                <form id="avisoForm">
+                    <input type="text" id="avisoTitulo" placeholder="Título do aviso" required>
+                    <textarea id="avisoDesc" placeholder="Descrição do aviso" required></textarea>
+                    <button type="submit">Enviar Aviso</button>
+                </form>
+            </div>
+
+            <div class="card-form">
+                <h2>2. POST /tarefas</h2>
+                <form id="tarefaForm">
+                    <input type="text" id="tarefaTitulo" placeholder="Título da tarefa" required>
+                    <input type="text" id="tarefaResponsavel" placeholder="Responsável" required>
+                    <input type="date" id="tarefaPrazo" required>
+                    <button type="submit">Enviar Tarefa</button>
+                </form>
+            </div>
+
+            <div class="card-form">
+                <h2>3. POST /usuarios</h2>
+                <form id="usuarioForm">
+                    <input type="text" id="userNome" placeholder="Nome completo" required>
+                    <input type="text" id="userCargo" placeholder="Cargo / Função" required>
+                    <input type="text" id="userTurma" placeholder="Turma (opcional)">
+                    <button type="submit">Cadastrar Usuário</button>
+                </form>
+            </div>
+
+            <div class="card-form">
+                <h2>4. POST /reservas</h2>
+                <form id="reservaForm">
+                    <input type="text" id="reservaSala" placeholder="Nome da sala" required>
+                    <input type="text" id="reservaAtividade" placeholder="Atividade" required>
+                    <input type="date" id="reservaData" required>
+                    <button type="submit">Reservar Sala</button>
+                </form>
+            </div>
+
+        </main>
+
+        <section class="test-section">
+            <h2>5. Teste de POST com 3 campos</h2>
+            <div class="test-card">
+                <button onclick="testarPost()" class="btn-test">
+                    Enviar Objeto de Teste (3 campos)
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Simulador de API • Dados enviados aparecem no Console (F12)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
