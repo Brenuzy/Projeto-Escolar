@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">E</div>
+                <h1>Layout</h1>
+            </div>
+            <button onclick="alert('clicou, boa!')" class="btn-primary">
+                Ação Principal
+                <span class="arrow">→</span>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Sobre</a>
+            <a href="#" class="nav-link">Contato</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-grid">
+            
+
+            <aside class="sidebar">
+                <h3>Menu Lateral</h3>
+                <div class="sidebar-menu">
+                    <a href="#" class="sidebar-link active">Dashboard</a>
+                    <a href="#" class="sidebar-link">Perfil</a>
+                    <a href="#" class="sidebar-link">Produtos</a>
+                    <a href="#" class="sidebar-link">Relatórios</a>
+                    <a href="#" class="sidebar-link">Configurações</a>
+                </div>
+            </aside>
+
+            <main class="content">
+                
+                <section class="section">
+                    <h2>Cartões em Grid</h2>
+                    <div class="cards-grid">
+                        <div class="card">
+                            <div class="card-image bg-blue">📱</div>
+                            <div class="card-body">
+                                <h4>Mobile First</h4>
+                                <p>Design simples, porém prático e atual, com o foco virado para celulares.</p>
+                                <span class="card-link">Saiba mais</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image bg-emerald">⚡</div>
+                            <div class="card-body">
+                                <h4>Performance</h4>
+                                <p>Código simples e prático, para aparelhos com menor capacidade.</p>
+                                <span class="card-link">Saiba mais</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image bg-amber">🎨</div>
+                            <div class="card-body">
+                                <h4>Design Moderno</h4>
+                                <p>HUD simples, mas funcional e moderna.</p>
+                                <span class="card-link">Saiba mais</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image bg-purple">🔒</div>
+                            <div class="card-body">
+                                <h4>Segurança</h4>
+                                <p>Métodos atuais e eficazes para sua proteção.</p>
+                                <span class="card-link">Saiba mais</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cards de Avisos -->
+                <section class="section">
+                    <h2>Avisos Importantes</h2>
+                    <div class="alerts-grid">
+                        <div class="alert-card warning">
+                            <div class="alert-icon">⚠️</div>
+                            <div class="alert-content">
+                                <h4>Manutenção Programada</h4>
+                                <p>O sistema ficará indisponível no dia 10/07 das 02h às 04h.</p>
+                                <span class="alert-tag">Alta prioridade</span>
+                            </div>
+                        </div>
+
+                        <div class="alert-card info">
+                            <div class="alert-icon">ℹ️</div>
+                            <div class="alert-content">
+                                <h4>Nova Funcionalidade</h4>
+                                <p>Agora é possível exportar relatórios em formato PDF.</p>
+                                <span class="alert-tag">Atualização</span>
+                            </div>
+                        </div>
+
+                        <div class="alert-card danger">
+                            <div class="alert-icon">🚨</div>
+                            <div class="alert-content">
+                                <h4>Atenção</h4>
+                                <p>Verifique suas credenciais. Mudança de senha recomendada.</p>
+                                <span class="alert-tag">Segurança</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>#MAIDELPRESIDENTEDOBRASIL</p>
+    </footer>
+
+</body>
+</html>
